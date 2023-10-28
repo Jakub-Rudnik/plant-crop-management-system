@@ -1,4 +1,16 @@
 @import "navigation.css";
+@import "font.css";
+
+:root {
+    --primary: black;
+    --secondary: #d4d4d8;
+    --background: #fafafa;
+}
+
+body {
+    background-color: var(--background);
+    font-family: "Poppins";
+}
 
 *, *::before, *::after{
     margin: 0;
