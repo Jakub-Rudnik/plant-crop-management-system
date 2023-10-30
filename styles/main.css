@@ -1,6 +1,7 @@
 @import "navigation.css";
 @import "font.css";
 @import "footer.css";
+@import "card.css";
 
 :root {
     --primary: #a4d6c7;
@@ -32,3 +33,10 @@ body {
     padding: 25px;
 }
 
+h1 {
+    padding-bottom: 25px;
+}
+
+.fontXXL {
+    font-size: 40px;
+}
