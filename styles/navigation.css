@@ -1,9 +1,10 @@
 .main__header {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    border-bottom: 2px solid var(--secondary);
+    padding: 25px 20px;
+    background: var(--grey);
+    height: 100%;
 }
 
 .main__header a {
@@ -16,18 +17,30 @@
     font-weight: bold;
 }
 
+.main__header__nav {
+    margin-top: 50px;
+}
+
 .main__header__nav ul {
     list-style: none;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 25px;
+}
+
+.main__header__nav ul li {
+    width: 100%;
+    height: fit-content;
 }
 
 .main__header__nav__link {
-    font-size: 16px;
+    font-size: 18px;
     padding: 10px 15px;
     border-radius: 5px;
+    width: 100%;
+    display: flex;
 }
 
 .main__header__nav__link--active {

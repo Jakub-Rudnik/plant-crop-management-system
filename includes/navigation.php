@@ -1,6 +1,10 @@
 <?php
 $navElements = [
     (object)[
+        "path" => "/",
+        "name" => "Panel"
+    ],
+    (object)[
         "path" => "/uprawy",
         "name" => "Uprawy"
     ],
@@ -18,7 +22,7 @@ $path = $_SERVER['REQUEST_URI'];
 ?>
 
 <header class="main__header">
-    <a class="main__header__logo" href="/">Chryzantemka</a>
+    <p class="main__header__logo">Chryzantemka</p>
     <nav class="main__header__nav">
         <ul>
             <?php
