@@ -37,4 +37,5 @@ switch ($_SERVER['REQUEST_URI']) {
     <?php } ?>
 </head>
 <body>
-<?php require_once "navigation.php" ?>
+    <?php require_once "navigation.php" ?>
+    <div class="main__container">

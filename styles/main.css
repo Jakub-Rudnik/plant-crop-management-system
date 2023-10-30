@@ -1,15 +1,14 @@
 @import "navigation.css";
 @import "font.css";
+@import "footer.css";
 
 :root {
-    --primary: black;
-    --secondary: #d4d4d8;
-    --background: #fafafa;
-}
-
-body {
-    background-color: var(--background);
-    font-family: "Poppins";
+    --primary: #a4d6c7;
+    --secondary: #ffffff;
+    --background: #f6f6f6;
+    --accent: #5db69c;
+    --text: #000000;
+    --grey: #eeeeee;
 }
 
 *, *::before, *::after{
@@ -17,3 +16,19 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: var(--background);
+    font-family: "Poppins";
+    display: flex;
+    height: 100vh;
+}
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+}
+
