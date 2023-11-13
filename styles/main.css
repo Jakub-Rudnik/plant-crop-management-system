@@ -1,16 +1,9 @@
+@import "variables.css";
 @import "navigation.css";
 @import "font.css";
 @import "footer.css";
 @import "card.css";
-
-:root {
-    --primary: #a4d6c7;
-    --secondary: #ffffff;
-    --background: #f6f6f6;
-    --accent: #5db69c;
-    --text: #000000;
-    --grey: #eeeeee;
-}
+@import "breakpoint-md.css";
 
 *, *::before, *::after{
     margin: 0;
@@ -22,15 +15,17 @@ body {
     background-color: var(--background);
     font-family: "Poppins";
     display: flex;
+    flex-direction: column;
     height: 100vh;
 }
 
 .main__container {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     padding: 25px;
+    position: relative;
 }
 
 h1 {
