@@ -1,0 +1,17 @@
+@media screen and (min-width: 768px) {
+    body {
+        flex-direction: row !important;
+    }
+
+    .main__header {
+        height: 100%;
+    }
+
+    .main__header__btn {
+        display: none;
+    }
+
+    .main__header__nav {
+        display: flex !important;
+    }
+}
