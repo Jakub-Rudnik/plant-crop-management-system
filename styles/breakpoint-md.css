@@ -3,10 +3,6 @@
         flex-direction: row !important;
     }
 
-    .main__header {
-        height: 100%;
-    }
-
     .main__header__btn {
         display: none;
     }
