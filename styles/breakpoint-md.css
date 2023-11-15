@@ -14,4 +14,8 @@
     .main__header__nav {
         display: flex !important;
     }
+
+    .card__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

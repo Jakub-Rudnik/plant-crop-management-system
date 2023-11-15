@@ -4,6 +4,7 @@
 @import "footer.css";
 @import "card.css";
 @import "breakpoint-md.css";
+@import "breakpoint-xl.css";
 
 *, *::before, *::after{
     margin: 0;
