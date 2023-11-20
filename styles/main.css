@@ -5,6 +5,7 @@
 @import "card.css";
 @import "breakpoint-md.css";
 @import "breakpoint-xl.css";
+@import "modal.css";
 
 *, *::before, *::after{
     margin: 0;
@@ -27,6 +28,29 @@ body {
     width: 100%;
     padding: 25px;
     position: relative;
+}
+
+.site__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.site__header__btn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.site__header__btn:hover {
+    cursor: pointer;
+    background-color: var(--grey);
 }
 
 h1 {
