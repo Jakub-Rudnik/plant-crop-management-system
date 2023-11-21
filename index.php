@@ -8,7 +8,7 @@ switch($request) {
         require __DIR__ . $pagesDir . 'home.php';
         break;
     case '/uprawy':
-        require __DIR__ . $pagesDir . 'crops.php';
+        require __DIR__ . $pagesDir . 'cultivations.php';
         break;
     case '/harmonogram':
         require __DIR__ . $pagesDir . 'schedule.php';
