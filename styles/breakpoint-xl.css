@@ -1,5 +1,0 @@
-@media screen and (min-width: 1280px) {
-    .card__wrapper {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
