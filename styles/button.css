@@ -1,0 +1,23 @@
+.btn {
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    color: var(--text);
+    border: none;
+    text-align: center;
+    font-family: Poppins;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn__big {
+    height: 40px;
+    padding: 10px 25px;
+    font-size: 16px;
+}
+
+.btn__primary {
+    background-color: var(--primary);
+    border: 2px solid var(--accent-darker);
+}

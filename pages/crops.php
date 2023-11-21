@@ -27,7 +27,7 @@ require_once "./includes/header.php"
             </div>
         </div>
         <div class="card__footer">
-            <a class="card__footer__btn" href="/uprawy">Przejdź</a>
+            <a class="btn btn__primary" href="/uprawy">Przejdź</a>
         </div>
     </div>
     <div class="card">
@@ -38,7 +38,7 @@ require_once "./includes/header.php"
             <p class="fontXXL">5</p>
         </div>
         <div class="card__footer">
-            <a class="card__footer__btn" href="/uprawy">Przejdź</a>
+            <a class="btn btn__primary" href="/uprawy">Przejdź</a>
         </div>
     </div>
     <div class="card">
@@ -49,7 +49,7 @@ require_once "./includes/header.php"
             <p class="fontXXL">5</p>
         </div>
         <div class="card__footer">
-            <a class="card__footer__btn" href="/uprawy">Przejdź</a>
+            <a class="btn btn__primary" href="/uprawy">Przejdź</a>
         </div>
     </div>
 </div>

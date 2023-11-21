@@ -3,9 +3,8 @@
 @import "font.css";
 @import "footer.css";
 @import "card.css";
-@import "breakpoint-md.css";
-@import "breakpoint-xl.css";
 @import "modal.css";
+@import "button.css";
 
 *, *::before, *::after{
     margin: 0;
@@ -34,6 +33,7 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    width: 100%;
 }
 
 .site__header__btn {
