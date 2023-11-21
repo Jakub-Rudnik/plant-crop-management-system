@@ -4,6 +4,7 @@
 @import "footer.css";
 @import "card.css";
 @import "modal.css";
+@import "form.css";
 @import "button.css";
 
 *, *::before, *::after{
