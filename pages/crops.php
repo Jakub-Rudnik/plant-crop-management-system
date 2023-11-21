@@ -18,13 +18,9 @@ require_once "./includes/header.php"
             Chyzantemy złociste
         </h3>
         <div class="card__body">
-            <div class="">
-                <p class="">Wielkość uprawy</p>
-                <p class="">1500</p>
-            </div><div class="">
-                <p class="">Wiglotność podłoża</p>
-                <p class="">76%</p>
-            </div>
+            <h4>Aktulane parametry:</h4>
+            <p class="parameters">Wielkość uprawy: 1500</p>
+            <p class="parameters">Wiglotność podłoża: 76%</p>
         </div>
         <div class="card__footer">
             <a class="btn btn__primary" href="/uprawy">Przejdź</a>
@@ -35,7 +31,9 @@ require_once "./includes/header.php"
             Bratek Szwajciarki Żółty
         </h3>
         <div class="card__body">
-            <p class="fontXXL">5</p>
+            <h4>Aktulane parametry:</h4>
+            <p class="parameters">Wielkość uprawy: 300</p>
+            <p class="parameters">Wiglotność podłoża: 100%</p>
         </div>
         <div class="card__footer">
             <a class="btn btn__primary" href="/uprawy">Przejdź</a>
@@ -46,7 +44,9 @@ require_once "./includes/header.php"
             Bratek Wielokwiatowy Black Knight
         </h3>
         <div class="card__body">
-            <p class="fontXXL">5</p>
+            <h4>Aktulane parametry:</h4>
+            <p class="parameters">Wielkość uprawy: 471</p>
+            <p class="parameters">Wiglotność podłoża: 87%</p>
         </div>
         <div class="card__footer">
             <a class="btn btn__primary" href="/uprawy">Przejdź</a>
