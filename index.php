@@ -1,19 +1,26 @@
 <?php
-$request = $_SERVER['REQUEST_URI'];
+$request = explode('/', $_SERVER['REQUEST_URI']);
 $pagesDir = '/pages/';
 
-switch($request) {
+switch($request[1]) {
     case '':
-    case '/':
         require __DIR__ . $pagesDir . 'home.php';
         break;
-    case '/uprawy':
+    case 'uprawy':
         require __DIR__ . $pagesDir . 'cultivations.php';
         break;
-    case '/harmonogram':
+    case 'uprawa':
+        if (count($request) == 3) {
+            if (preg_match('/\d/', $request[2]))
+            require  __DIR__ . $pagesDir . 'cultivation.php';
+            break;
+        }
+        require __DIR__ . $pagesDir . '404.php';
+        break;
+    case 'harmonogram':
         require __DIR__ . $pagesDir . 'schedule.php';
         break;
-    case '/pracownicy':
+    case 'pracownicy':
         require __DIR__ . $pagesDir . 'workers.php';
         break;
     default:
