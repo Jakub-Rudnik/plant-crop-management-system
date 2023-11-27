@@ -4,8 +4,8 @@ require_once "./includes/header.php"
 ?>
 <div class="site__header">
     <h1>Uprawy</h1>
-    <button class="site__header__btn" title="Dodaj uprawę" onclick="showModal()">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+    <button class="site__header__btn" title="Dodaj uprawę" onclick="createModal(addCropModal)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="var(--text-950)" class="bi bi-plus-circle" viewBox="0 0 16 16">
             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
             <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
         </svg>
@@ -18,12 +18,12 @@ require_once "./includes/header.php"
             Chyzantemy złociste
         </h3>
         <div class="card__body">
-            <h4>Aktulane parametry:</h4>
+            <h5>Aktulane parametry:</h5>
             <p class="parameters">Wielkość uprawy: 1500</p>
             <p class="parameters">Wiglotność podłoża: 76%</p>
         </div>
         <div class="card__footer">
-            <a class="btn btn__primary" href="/uprawy">Przejdź</a>
+            <a class="btn btn__primary" href="/uprawa/1">Przejdź</a>
         </div>
     </div>
     <div class="card">
@@ -31,12 +31,12 @@ require_once "./includes/header.php"
             Bratek Szwajciarki Żółty
         </h3>
         <div class="card__body">
-            <h4>Aktulane parametry:</h4>
+            <h5>Aktulane parametry:</h5>
             <p class="parameters">Wielkość uprawy: 300</p>
             <p class="parameters">Wiglotność podłoża: 100%</p>
         </div>
         <div class="card__footer">
-            <a class="btn btn__primary" href="/uprawy">Przejdź</a>
+            <a class="btn btn__primary" href="/uprawa/1">Przejdź</a>
         </div>
     </div>
     <div class="card">
@@ -44,12 +44,51 @@ require_once "./includes/header.php"
             Bratek Wielokwiatowy Black Knight
         </h3>
         <div class="card__body">
-            <h4>Aktulane parametry:</h4>
+            <h5>Aktulane parametry:</h5>
             <p class="parameters">Wielkość uprawy: 471</p>
             <p class="parameters">Wiglotność podłoża: 87%</p>
         </div>
         <div class="card__footer">
-            <a class="btn btn__primary" href="/uprawy">Przejdź</a>
+            <a class="btn btn__primary" href="/uprawa/1">Przejdź</a>
+        </div>
+    </div>
+    <div class="card">
+        <h3 class="card__title">
+            Chyzantemy złociste
+        </h3>
+        <div class="card__body">
+            <h5>Aktulane parametry:</h5>
+            <p class="parameters">Wielkość uprawy: 1500</p>
+            <p class="parameters">Wiglotność podłoża: 76%</p>
+        </div>
+        <div class="card__footer">
+            <a class="btn btn__primary" href="/uprawa/1">Przejdź</a>
+        </div>
+    </div>
+    <div class="card">
+        <h3 class="card__title">
+            Bratek Szwajciarki Żółty
+        </h3>
+        <div class="card__body">
+            <h5>Aktulane parametry:</h5>
+            <p class="parameters">Wielkość uprawy: 300</p>
+            <p class="parameters">Wiglotność podłoża: 100%</p>
+        </div>
+        <div class="card__footer">
+            <a class="btn btn__primary" href="/uprawa/1">Przejdź</a>
+        </div>
+    </div>
+    <div class="card">
+        <h3 class="card__title">
+            Bratek Wielokwiatowy Black Knight
+        </h3>
+        <div class="card__body">
+            <h5>Aktulane parametry:</h5>
+            <p class="parameters">Wielkość uprawy: 471</p>
+            <p class="parameters">Wiglotność podłoża: 87%</p>
+        </div>
+        <div class="card__footer">
+            <a class="btn btn__primary" href="/uprawa/1">Przejdź</a>
         </div>
     </div>
 </div>
