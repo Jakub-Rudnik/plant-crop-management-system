@@ -38,4 +38,4 @@ switch ($_SERVER['REQUEST_URI']) {
 </head>
 <body>
     <?php require_once "navigation.php" ?>
-    <div class="main__container">
+    <main class="main__container">
