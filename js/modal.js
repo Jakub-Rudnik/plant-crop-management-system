@@ -1,56 +1,61 @@
-CREATE_CROP_MODAL = `
-        <div class="site__header">
-            <h1>Dodaj uprawę</h1>
-            <button class="site__header__btn" title="Dodaj uprawę" onclick="closeModal()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-                </svg>
-            </button>
-        </div>
-        <form>
-            <div class="form-control">
-                <label for="cropName">Nazwa uprawy</label>
-                <input id="cropName" />
-            </div>
-            <div class="form-control">
-                <label for="field2">Pole 2</label>
-                <input id="field2" />
-            </div>
-            <div class="form-control">
-                <label for="field3">Pole3</label>
-                <input id="field3" />
-            </div>
-            <button type="submit" class="btn btn__big btn__primary">Dodaj</button>
-        </form>
-`;
-function createModal() {
-    const modalBackground = document.createElement("div");
-    modalBackground.classList.add("modal__background")
+function createModal(modal) {
+    const modalContentHtml = `
+    <div class="modal__header">
+        <h3 class="modal__title">${modal.title}</h3>
+        <button class="btn btn__icon" title="Zamknij okno" onclick="closeModal()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="var(--text-800)" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--text-800)" width="24" height="24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+         </button>
+    </div>
+    <div class="modal__body">
+        ${modal.template}
+    </div>
+    `;
 
-    const modal = document.createElement("div");
-    modal.classList.add("modal__container");
+    const modalBackground = document.createElement('div');
+    modalBackground.classList.add('modal__background');
 
-    modal.innerHTML = CREATE_CROP_MODAL;
-
-    modalBackground.appendChild(modal);
+    const modalContainer = document.createElement("div");
+    modalContainer.classList.add("modal");
+    modalContainer.innerHTML = modalContentHtml;
 
     const header = document.querySelector(".main__header");
 
     document.body.insertBefore(modalBackground, header);
-}
+    document.body.insertBefore(modalContainer, header);
 
-function showModal() {
-    const modal = document.querySelector(".modal__background");
+    const modalInDom = document.querySelector(".modal");
+    const dimensions = modalInDom.getBoundingClientRect();
 
-    if (modal != null) {
-        modal.style.display = "flex";
-    } else {
-        createModal();
-    }
+    modalInDom.style.marginTop = (0 - dimensions.height / 2).toString() + 'px';
+    modalInDom.style.marginLeft = (0 - dimensions.width / 2).toString() + 'px';
+
+    document.querySelector(modal.elemToFocus).focus();
+
+
+    document.querySelector(".modal__background").addEventListener('mousedown', (e) => closeModal());
 }
 
 function closeModal() {
-    const modal = document.querySelector(".modal__background");
+    const modalBackground = document.querySelector(".modal__background");
+    const modal = document.querySelector(".modal");
 
-    modal.style.display = "none";
+    if (modalBackground != null && modal != null) {
+        document.body.removeChild(modal);
+        document.body.removeChild(modalBackground);
+    }
+
+
+    document.querySelector(".modal__background").style.pointerEvents = 'auto';
 }
+
+document.addEventListener('keydown', (e) => {
+    const modal = document.querySelector(".modal__background");
+    if (modal != null && e.key === "Escape") closeModal();
+});
+
+
+
+const modal = document.querySelector(".modal__background");
+
