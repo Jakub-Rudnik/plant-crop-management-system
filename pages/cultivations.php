@@ -1,14 +1,14 @@
 <?php
-$title = "Strona Główna | System Ogrodnictwa";
+$PAGE_TITLE = "Uprawa 24";
 require_once "./includes/header.php"
 ?>
 <div class="site__header">
     <h1>Uprawy</h1>
-    <button class="site__header__btn" title="Dodaj uprawę" onclick="createModal(addCropModal)">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="var(--text-950)" class="bi bi-plus-circle" viewBox="0 0 16 16">
-            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+    <button class="btn" title="Dodaj uprawę" onclick="createModal(addCropModal)">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--text-800)" width="20" height="20">
+            <path d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
         </svg>
+        <p>Dodaj uprawę</p>
     </button>
 </div>
 

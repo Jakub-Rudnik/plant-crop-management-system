@@ -1,5 +1,6 @@
 <?php
-switch ($_SERVER['REQUEST_URI']) {
+$request = explode('/', $_SERVER['REQUEST_URI']);
+switch ($request[1]) {
     case '':
     case '/':
         $CURRENT_PAGE = "Dashboard";
@@ -8,6 +9,14 @@ switch ($_SERVER['REQUEST_URI']) {
     case "/uprawy":
         $CURRENT_PAGE = "CropsPanel";
         $PAGE_TITLE = "Zarządzanie Uprawami";
+        break;
+    case 'uprawa':
+        if (count($request) == 3) {
+            if (preg_match('/\d/', $request[2]))
+                $CURRENT_PAGE = "Uprawa";
+                $PAGE_TITLE = "Zarządzanie Uprawą";
+            break;
+        }
         break;
     case "/harmonogram":
         $CURRENT_PAGE = "SchedulePage";
