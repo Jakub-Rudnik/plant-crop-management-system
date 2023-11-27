@@ -21,7 +21,7 @@ $navElements = [
 $path = $_SERVER['REQUEST_URI'];
 ?>
 
-<header class="main__header">
+<aside class="main__header">
     <div class="main__header__top">
         <button id="menuBtn" class="main__header__btn">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-list" viewBox="0 0 16 16">
@@ -43,4 +43,4 @@ $path = $_SERVER['REQUEST_URI'];
             ?>
         </ul>
     </nav>
-</header>
+</aside>
