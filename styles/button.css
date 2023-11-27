@@ -2,13 +2,24 @@
     padding: 10px 25px;
     text-decoration: none;
     border-radius: 8px;
-    color: var(--text);
+    color: var(--text-800);
     border: none;
     text-align: center;
     font-family: Poppins;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.1s ease-in-out;
+    background-color: var(--background-50);
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--background-200);
+}
+
+.btn:focus {
+    outline: 4px solid var(--background-300);
 }
 
 .btn__big {
@@ -17,7 +28,28 @@
     font-size: 16px;
 }
 
+.btn__icon {
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+}
+
 .btn__primary {
-    background-color: var(--primary);
-    border: 2px solid var(--accent-darker);
+    background-color: var(--primary-500);
+}
+
+.btn__primary:hover {
+    background-color: var(--primary-600);
+}
+
+.btn__primary:focus {
+    outline: 4px solid var(--primary-700);
+}
+
+.btn__secondary {
+    background-color: var(--background-200);
+}
+
+.btn__secondary:hover {
+    background-color: var(--background-300);
 }
