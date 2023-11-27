@@ -15,9 +15,13 @@
     box-sizing: border-box;
 }
 
+:root {
+    color-scheme: dark;
+}
+
 body {
     background-color: var(--background-50);
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -31,13 +35,21 @@ body {
     width: 100%;
     padding: 25px;
     position: relative;
+    overflow-y: scroll;
+    height: 100vh;
 }
 
 .site__header {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
     width: 100%;
+    padding-bottom: 25px;
+}
+
+.site__header > h1 {
+        padding-bottom: 0;
 }
 
 .site__header__btn {
@@ -68,14 +80,5 @@ h1 {
 @media screen and (min-width: 768px) {
     body {
         flex-direction: row !important;
-    }
-
-    .main__header__btn {
-        display: none;
-    }
-
-    .main__header__nav {
-        display: flex !important;
-        width: 200px;
     }
 }

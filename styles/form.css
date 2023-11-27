@@ -11,14 +11,14 @@ form {
     width: 100%;
 }
 
-input {
+input, select {
     height: 50px;
     padding: 10px;
     background-color: var(--background-100);
     border-radius: 10px;
     border: 2px solid var(--background-200);
     color: var(--text-800);
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 16px;
 }
 
@@ -26,6 +26,6 @@ label {
     padding-bottom: 5px;
 }
 
-input:focus {
+input:focus, select:focus{
     outline: 4px solid var(--primary-500);
 }

@@ -3,6 +3,10 @@
     flex-direction: column;
     align-items: center;
     padding: 25px 20px;
+    position: sticky;
+    top: 0;
+    background-color: var(--background-50);
+    z-index: 100;
 }
 
 .main__header a {
@@ -35,6 +39,16 @@
     display: none;
 }
 
+.main__header__nav .open {
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
 .main__header__nav ul {
     list-style: none;
     display: flex;
@@ -60,4 +74,20 @@
 .main__header__nav__link--active {
     background-color: var(--primary-500);
     box-shadow: 0 5px 30px var(--primary-400);
+}
+
+@media screen and (min-width: 768px) {
+    .main__header__btn {
+        display: none;
+    }
+
+    .main__header {
+        position: unset;
+        height: 100vh;
+    }
+
+    .main__header__nav {
+        display: flex !important;
+        width: 200px;
+    }
 }
