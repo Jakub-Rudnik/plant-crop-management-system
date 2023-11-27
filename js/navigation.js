@@ -1,13 +1,19 @@
 const menuBtn = document.querySelector('#menuBtn');
 const nav = document.querySelector('#nav');
-const body = document.querySelector('body');
+const closeIcon = document.querySelector('#closeIcon');
+const menuIcon = document.querySelector('#menuIcon');
 let menuOpen = false;
-const MID_BREAKPOINT = 768;
-
-let currWidth = window.innerWidth;
-window.addEventListener('resize', () => currWidth = window.innerWidth);
 
 menuBtn.addEventListener('click', () => {
     menuOpen = !menuOpen;
-    nav.style.display = currWidth >= MID_BREAKPOINT ? "flex" : menuOpen ? "flex" : "none";
+    nav.classList.toggle('open');
+
+    if (menuOpen) {
+        closeIcon.style.display = 'block';
+        menuIcon.style.display = 'none';
+    } else {
+        closeIcon.style.display = 'none';
+        menuIcon.style.display = 'block';
+    }
+
 })
