@@ -1,0 +1,24 @@
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+tr:nth-child(odd) {
+    background: var(--primary-400);
+}
+
+tr:nth-child(even) td {
+    border: none;
+}
+
+td {
+    padding: 15px;
+}
+
+td:nth-child(odd) {
+    border-radius: 10px 0 0 10px;
+}
+
+td:nth-child(even) {
+    border-radius: 0 10px 10px 0;
+}
