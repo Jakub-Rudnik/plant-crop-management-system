@@ -1,9 +1,60 @@
 :root {
-    --primary: #a4d6c7;
-    --secondary: #ffffff;
-    --background: #eeeeee;
-    --accent: #5db69c;
-    --accent-darker: #5bb59b;
-    --text: #000000;
-    --grey: #dddddd;
+    --text-50: hsl(0 0% 5%);
+    --text-100: hsl(0 0% 10%);
+    --text-200: hsl(0 0% 20%);
+    --text-300: hsl(0 0% 30%);
+    --text-400: hsl(0 0% 40%);
+    --text-500: hsl(0 0% 50%);
+    --text-600: hsl(0 0% 60%);
+    --text-700: hsl(0 0% 70%);
+    --text-800: hsl(0 0% 80%);
+    --text-900: hsl(0 0% 90%);
+    --text-950: hsl(0 0% 95%);
+
+    --background-50: hsl(0 0% 5%);
+    --background-100: hsl(0 0% 10%);
+    --background-200: hsl(0 0% 20%);
+    --background-300: hsl(0 0% 30%);
+    --background-400: hsl(0 0% 40%);
+    --background-500: hsl(0 0% 50%);
+    --background-600: hsl(0 0% 60%);
+    --background-700: hsl(0 0% 70%);
+    --background-800: hsl(0 0% 80%);
+    --background-900: hsl(0 0% 90%);
+    --background-950: hsl(0 0% 95%);
+
+    --primary-50: hsl(231 52% 5%);
+    --primary-100: hsl(233 49% 10%);
+    --primary-200: hsl(233 51% 20%);
+    --primary-300: hsl(233 50% 30%);
+    --primary-400: hsl(233 50% 40%);
+    --primary-500: hsl(233 50% 50%);
+    --primary-600: hsl(233 50% 60%);
+    --primary-700: hsl(233 50% 70%);
+    --primary-800: hsl(234 50% 80%);
+    --primary-900: hsl(233 49% 90%);
+    --primary-950: hsl(235 52% 95%);
+)
+    --secondary-50: hsl(0 0% 5%);
+    --secondary-100: hsl(0 0% 10%);
+    --secondary-200: hsl(0 0% 20%);
+    --secondary-300: hsl(0 0% 30%);
+    --secondary-400: hsl(0 0% 40%);
+    --secondary-500: hsl(0 0% 50%);
+    --secondary-600: hsl(0 0% 60%);
+    --secondary-800: hsl(0 0% 80%);
+    --secondary-900: hsl(0 0% 90%);
+    --secondary-950: hsl(0 0% 95%);
+    --secondary-700: hsl(0 0% 70%);
+    --accent-50: hsl(248 31% 5%);
+    --accent-100: hsl(254 33% 10%);
+    --accent-200: hsl(252 33% 20%);
+    --accent-300: hsl(253 33% 30%);
+    --accent-400: hsl(253 33% 40%);
+    --accent-500: hsl(253 33% 50%);
+    --accent-600: hsl(253 33% 60%);
+    --accent-700: hsl(253 33% 70%);
+    --accent-800: hsl(252 33% 80%);
+    --accent-900: hsl(254 33% 90%);
+    --accent-950: hsl(255 31% 95%);
 }
