@@ -2,32 +2,64 @@
 $title = "Strona Główna | System Ogrodnictwa";
 require_once "./includes/header.php"
 ?>
-<h1>Uprawa</h1>
+<h1>Uprawa nr24</h1>
 
-<div class="card__wrapper">
-    <div class="card">
-        <h3 class="card__title">
-            Uprawy
-        </h3>
-        <div class="card__body">
-            <p class="fontXXL">13</p>
+<div class="card__wrapper max_2_cards">
+    <div class="card no__hover">
+        <div class="card__title">
+            Informacje
         </div>
-        <div class="card__footer">
-            <a class="card__footer__btn" href="/uprawy">Przejdź</a>
+        <div class="card__body">
+            <table>
+                <tr>
+                    <td>Odmiana</td>
+                    <td>Chryzantema Złocista</td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>Wielokość uprawy</td>
+                    <td>1500</td>
+                </tr>
+                <tr>
+                    <td>Wilgotność podłoża</td>
+                    <td>56%</td>
+                </tr>
+                <tr>
+                    <td>Temperatura</td>
+                    <td>27 <span>&#8451;</span></td>
+                </tr>
+            </table>
         </div>
     </div>
-    <div class="card">
-        <h3 class="card__title">
-            Pracownicy
-        </h3>
-        <div class="card__body">
-            <p class="fontXXL">5</p>
+
+    <div class="card no__hover">
+        <div class="card__title">
+            Informacje
         </div>
-        <div class="card__footer">
-            <a class="card__footer__btn" href="/uprawy">Przejdź</a>
+        <div class="card__body">
+            <table>
+                <tr>
+                    <td>Odmiana</td>
+                    <td>Chryzantema Złocista</td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>Wielokość uprawy</td>
+                    <td>1500</td>
+                </tr>
+                <tr>
+                    <td>Wilgotność podłoża</td>
+                    <td>56%</td>
+                </tr>
+                <tr>
+                    <td>Temperatura</td>
+                    <td>27 <span>&#8451;</span></td>
+                </tr>
+            </table>
         </div>
     </div>
 </div>
+
 
 <?php
 require_once "./includes/footer.php"
