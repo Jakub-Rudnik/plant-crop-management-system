@@ -6,6 +6,8 @@
 @import "modal.css";
 @import "form.css";
 @import "button.css";
+@import "table.css";
+@import "typography.css";
 
 *, *::before, *::after{
     margin: 0;
@@ -14,11 +16,12 @@
 }
 
 body {
-    background-color: var(--background);
+    background-color: var(--background-50);
     font-family: "Poppins";
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    color: var(--text-800);
 }
 
 .main__container {
@@ -51,7 +54,7 @@ body {
 
 .site__header__btn:hover {
     cursor: pointer;
-    background-color: var(--grey);
+    background-color: var(--background-200);
 }
 
 h1 {
@@ -73,5 +76,6 @@ h1 {
 
     .main__header__nav {
         display: flex !important;
+        width: 200px;
     }
 }
