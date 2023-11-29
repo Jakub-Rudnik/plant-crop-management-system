@@ -8,6 +8,7 @@
 @import "button.css";
 @import "table.css";
 @import "typography.css";
+@import "schedule.css";
 
 *, *::before, *::after{
     margin: 0;
@@ -33,7 +34,7 @@ body {
     flex-direction: column;
     flex: 1;
     width: 100%;
-    padding: 25px;
+    padding: 0 25px 25px 25px;
     position: relative;
     overflow-y: scroll;
     height: 100vh;
@@ -45,7 +46,12 @@ body {
     justify-content: flex-start;
     gap: 25px;
     width: 100%;
-    padding-bottom: 25px;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    background-color: var(--background-50);
+    z-index: 20;
+    border-bottom: 2px solid var(--background-200);
 }
 
 .site__header > h1 {
