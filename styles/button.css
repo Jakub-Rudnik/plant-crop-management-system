@@ -48,11 +48,15 @@
 }
 
 .btn__secondary {
-    background-color: var(--background-200);
+    background-color: var(--secondary-500);
+}
+
+.btn__secondary:focus {
+    outline: 4px solid var(--secondary-700);
 }
 
 .btn__secondary:hover {
-    background-color: var(--background-300);
+    background-color: var(--secondary-600);
 }
 
 .btn__outlined {
@@ -62,6 +66,45 @@
 .btn__outlined:hover {
     border: 2px solid var(--background-100);
 }
+
+.btn__accent {
+   background-color: var(--accent-500);
+}
+
+.btn__accent:hover {
+   background-color: var(--accent-600);
+}
+
+.btn__accent:focus {
+    outline: 4px solid var(--accent-700);
+}
+
+
+.btn__success {
+    background-color: var(--success-400);
+}
+
+.btn__success:hover {
+    background-color: var(--success-500);
+}
+
+.btn__success:focus {
+    outline: 4px solid var(--success-600);
+}
+
+
+.btn__danger {
+    background-color: var(--danger-400);
+}
+
+.btn__danger:hover {
+    background-color: var(--danger-500);
+}
+
+.btn__danger:focus {
+    outline: 4px solid var(--danger-600);
+}
+
 
 @media screen and (min-width: 768px) {
     .btn p {

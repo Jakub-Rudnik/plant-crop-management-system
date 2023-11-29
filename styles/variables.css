@@ -46,6 +46,7 @@
     --secondary-900: hsl(0 0% 90%);
     --secondary-950: hsl(0 0% 95%);
     --secondary-700: hsl(0 0% 70%);
+
     --accent-50: hsl(248 31% 5%);
     --accent-100: hsl(254 33% 10%);
     --accent-200: hsl(252 33% 20%);
@@ -57,4 +58,40 @@
     --accent-800: hsl(252 33% 80%);
     --accent-900: hsl(254 33% 90%);
     --accent-950: hsl(255 31% 95%);
+
+    --success-50: hsl(128 62% 5%);
+    --success-100: hsl(129 65% 10%);
+    --success-200: hsl(128 65% 20%);
+    --success-300: hsl(128 63% 30%);
+    --success-400: hsl(128 64% 40%);
+    --success-500: hsl(128 64% 50%);
+    --success-600: hsl(128 64% 60%);
+    --success-700: hsl(128 63% 70%);
+    --success-800: hsl(128 65% 80%);
+    --success-900: hsl(129 65% 90%);
+    --success-950: hsl(128 62% 95%);
+
+    --danger-50: hsl(0 62% 5%);
+    --danger-100: hsl(0 65% 10%);
+    --danger-200: hsl(0 63% 20%);
+    --danger-300: hsl(0 63% 30%);
+    --danger-400: hsl(0 63% 40%);
+    --danger-500: hsl(0 63% 50%);
+    --danger-600: hsl(0 63% 60%);
+    --danger-700: hsl(0 63% 70%);
+    --danger-800: hsl(0 63% 80%);
+    --danger-900: hsl(0 65% 90%);
+    --danger-950: hsl(0 62% 95%);
+
+    --warning-50: hsl(44 85% 5%);
+    --warning-100: hsl(45 84% 10%);
+    --warning-200: hsl(44 84% 20%);
+    --warning-300: hsl(44 86% 30%);
+    --warning-400: hsl(44 85% 40%);
+    --warning-500: hsl(44 85% 50%);
+    --warning-600: hsl(44 85% 60%);
+    --warning-700: hsl(44 86% 70%);
+    --warning-800: hsl(44 84% 80%);
+    --warning-900: hsl(45 84% 90%);
+    --warning-950: hsl(44 85% 95%);
 }
