@@ -24,6 +24,7 @@ require_once "./includes/header.php"
         </div>
         <div class="card__footer">
             <a class="btn btn__primary" href="/uprawa/1">Przejdź</a>
+            <a class="btn btn__accent" onclick="createModal(editCropModal)">Edytuj</a>
         </div>
     </div>
     <div class="card">
@@ -37,6 +38,7 @@ require_once "./includes/header.php"
         </div>
         <div class="card__footer">
             <a class="btn btn__primary" href="/uprawa/1">Przejdź</a>
+            <a class="btn btn__accent" onclick="createModal(editCropModal)">Edytuj</a>
         </div>
     </div>
     <div class="card">
@@ -50,6 +52,7 @@ require_once "./includes/header.php"
         </div>
         <div class="card__footer">
             <a class="btn btn__primary" href="/uprawa/1">Przejdź</a>
+            <a class="btn btn__accent" onclick="createModal(editCropModal)">Edytuj</a>
         </div>
     </div>
     <div class="card">
@@ -63,6 +66,7 @@ require_once "./includes/header.php"
         </div>
         <div class="card__footer">
             <a class="btn btn__primary" href="/uprawa/1">Przejdź</a>
+            <a class="btn btn__accent" onclick="createModal(editCropModal)">Edytuj</a>
         </div>
     </div>
     <div class="card">
@@ -76,6 +80,7 @@ require_once "./includes/header.php"
         </div>
         <div class="card__footer">
             <a class="btn btn__primary" href="/uprawa/1">Przejdź</a>
+            <a class="btn btn__accent" onclick="createModal(editCropModal)">Edytuj</a>
         </div>
     </div>
     <div class="card">
@@ -89,6 +94,7 @@ require_once "./includes/header.php"
         </div>
         <div class="card__footer">
             <a class="btn btn__primary" href="/uprawa/1">Przejdź</a>
+            <a class="btn btn__accent" onclick="createModal(editCropModal)">Edytuj</a>
         </div>
     </div>
 </div>
