@@ -15,7 +15,6 @@ require_once "./includes/header.php"
                     <td>Odmiana</td>
                     <td>Chryzantema Złocista</td>
                 </tr>
-                </tr>
                 <tr>
                     <td>Wielokość uprawy</td>
                     <td>1500</td>
