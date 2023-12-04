@@ -1,22 +1,22 @@
 [
   {
     "id": 1,
-    "firstname": "Adam",
-    "forename": "Kowalski"
+    "forename": "Adam",
+    "lastname": "Kowalski"
   },
   {
     "id":  2,
-    "firstname": "Maria",
-    "forename": "Nowak"
+    "forename": "Maria",
+    "lastname": "Nowak"
   },
   {
     "id":  3,
-    "firstname": "Piotr",
-    "forename": "Wiśniewski"
+    "forename": "Piotr",
+    "lastname": "Wiśniewski"
   },
   {
     "id":  4,
-    "firstname": "Anna",
-    "forename": "Jankowska"
+    "forename": "Anna",
+    "lastname": "Jankowska"
   }
 ]
