@@ -13,91 +13,9 @@ require_once "./includes/header.php"
 </div>
 
 <div class="card__wrapper">
-    <div class="card">
-        <h3 class="card__title">
-            Chyzantemy złociste
-        </h3>
-        <div class="card__body">
-            <h5>Aktulane parametry:</h5>
-            <p class="parameters">Wielkość uprawy: 1500</p>
-            <p class="parameters">Wiglotność podłoża: 76%</p>
-        </div>
-        <div class="card__footer">
-            <a class="btn btn__primary" href="/uprawa/1">Przejdź</a>
-            <a class="btn btn__accent" onclick="createModal(editCropModal)">Edytuj</a>
-        </div>
-    </div>
-    <div class="card">
-        <h3 class="card__title">
-            Bratek Szwajciarki Żółty
-        </h3>
-        <div class="card__body">
-            <h5>Aktulane parametry:</h5>
-            <p class="parameters">Wielkość uprawy: 300</p>
-            <p class="parameters">Wiglotność podłoża: 100%</p>
-        </div>
-        <div class="card__footer">
-            <a class="btn btn__primary" href="/uprawa/1">Przejdź</a>
-            <a class="btn btn__accent" onclick="createModal(editCropModal)">Edytuj</a>
-        </div>
-    </div>
-    <div class="card">
-        <h3 class="card__title">
-            Bratek Wielokwiatowy Black Knight
-        </h3>
-        <div class="card__body">
-            <h5>Aktulane parametry:</h5>
-            <p class="parameters">Wielkość uprawy: 471</p>
-            <p class="parameters">Wiglotność podłoża: 87%</p>
-        </div>
-        <div class="card__footer">
-            <a class="btn btn__primary" href="/uprawa/1">Przejdź</a>
-            <a class="btn btn__accent" onclick="createModal(editCropModal)">Edytuj</a>
-        </div>
-    </div>
-    <div class="card">
-        <h3 class="card__title">
-            Chyzantemy złociste
-        </h3>
-        <div class="card__body">
-            <h5>Aktulane parametry:</h5>
-            <p class="parameters">Wielkość uprawy: 1500</p>
-            <p class="parameters">Wiglotność podłoża: 76%</p>
-        </div>
-        <div class="card__footer">
-            <a class="btn btn__primary" href="/uprawa/1">Przejdź</a>
-            <a class="btn btn__accent" onclick="createModal(editCropModal)">Edytuj</a>
-        </div>
-    </div>
-    <div class="card">
-        <h3 class="card__title">
-            Bratek Szwajciarki Żółty
-        </h3>
-        <div class="card__body">
-            <h5>Aktulane parametry:</h5>
-            <p class="parameters">Wielkość uprawy: 300</p>
-            <p class="parameters">Wiglotność podłoża: 100%</p>
-        </div>
-        <div class="card__footer">
-            <a class="btn btn__primary" href="/uprawa/1">Przejdź</a>
-            <a class="btn btn__accent" onclick="createModal(editCropModal)">Edytuj</a>
-        </div>
-    </div>
-    <div class="card">
-        <h3 class="card__title">
-            Bratek Wielokwiatowy Black Knight
-        </h3>
-        <div class="card__body">
-            <h5>Aktulane parametry:</h5>
-            <p class="parameters">Wielkość uprawy: 471</p>
-            <p class="parameters">Wiglotność podłoża: 87%</p>
-        </div>
-        <div class="card__footer">
-            <a class="btn btn__primary" href="/uprawa/1">Przejdź</a>
-            <a class="btn btn__accent" onclick="createModal(editCropModal)">Edytuj</a>
-        </div>
-    </div>
 </div>
+
+<script src="../js/crops.service.js" type="module"></script>
 <?php
 require_once "./includes/footer.php"
 ?>

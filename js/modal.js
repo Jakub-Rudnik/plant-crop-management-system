@@ -1,24 +1,41 @@
-function createModal(modal) {
-    const modalContentHtml = `
-    <div class="modal__header">
-        <h3 class="modal__title">${modal.title}</h3>
-        <button class="btn btn__icon" title="Zamknij okno" onclick="closeModal()">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="var(--text-800)" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--text-800)" width="24" height="24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-         </button>
-    </div>
-    <div class="modal__body">
-        ${modal.template}
-    </div>
-    `;
+async function createModal(modal, type, id) {
+    let template;
+
+    switch (type) {
+        case "crop-edit":
+            template = await fetch("http://localhost/api/editCropModal", {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    id: id
+                })
+            })
+                .then(res => res.text())
+                .then(data => data);
+            break;
+
+    }
 
     const modalBackground = document.createElement('div');
     modalBackground.classList.add('modal__background');
 
     const modalContainer = document.createElement("div");
     modalContainer.classList.add("modal");
-    modalContainer.innerHTML = modalContentHtml;
+    modalContainer.innerHTML = `
+        <div class="modal__header">
+        <h3 class="modal__title">${modal.title}</h3>
+        <button class="btn btn__icon" title="Zamknij okno" onclick="closeModal()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="var(--text-800)" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--text-800)" width="24" height="24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+         </button>
+        </div>
+        <div class="modal__body">
+            ${template}
+        </div>
+    `;
 
     const header = document.querySelector(".main__header");
 
@@ -33,7 +50,6 @@ function createModal(modal) {
 
     document.querySelector(modal.elemToFocus).focus();
 
-
     document.querySelector(".modal__background").addEventListener('mousedown', (e) => closeModal());
 }
 
@@ -45,9 +61,6 @@ function closeModal() {
         document.body.removeChild(modal);
         document.body.removeChild(modalBackground);
     }
-
-
-    document.querySelector(".modal__background").style.pointerEvents = 'auto';
 }
 
 document.addEventListener('keydown', (e) => {

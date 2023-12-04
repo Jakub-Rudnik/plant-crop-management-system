@@ -23,6 +23,20 @@ switch($request[1]) {
     case 'pracownicy':
         require __DIR__ . $pagesDir . 'workers.php';
         break;
+    case 'api':
+        if (count($request) == 3) {
+           switch ($request[2]) {
+               case "editCropModal":
+                   require __DIR__ . '/api/editCropModal.php';
+                   break;
+               default:
+                   require __DIR__ . $pagesDir . '404.php';
+                   break;
+           }
+        } else {
+            require __DIR__ . $pagesDir . '404.php';
+        }
+        break;
     default:
         require __DIR__ . $pagesDir . '404.php';
 }
