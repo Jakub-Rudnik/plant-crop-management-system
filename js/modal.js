@@ -28,7 +28,7 @@ async function createModal(modal, type, id) {
 
     document.querySelector(modal.elemToFocus).focus();
 
-    document.querySelector(".modal__background").addEventListener('mousedown', (e) => closeModal());
+    document.querySelector(".modal__background").addEventListener('mousedown', () => closeModal());
 }
 
 function closeModal() {
