@@ -1,6 +1,11 @@
 <?php
     $title = "Strona Główna | System Ogrodnictwa";
-    require_once "./includes/header.php"
+    require_once "./includes/header.php";
+
+    $crops = json_decode(file_get_contents(dirname('index.php') . '/mockup-data/crops.json'), true);
+    $workers = json_decode(file_get_contents(dirname('index.php') . '/mockup-data/workers.json'), true);
+    $varieties = json_decode(file_get_contents(dirname('index.php') . '/mockup-data/varieties.json'), true);
+
 ?>
 <h1>Strona Główna</h1>
 
@@ -10,10 +15,10 @@
             Uprawy
         </h3>
         <div class="card__body">
-            <p class="fontXXL">13</p>
+            <p class="fontXXL"><?=count($crops)?></p>
         </div>
         <div class="card__footer">
-            <a class="card__footer__btn" href="/uprawy">Przejdź</a>
+            <a class="btn btn__primary" href="/uprawy">Przejdź</a>
         </div>
     </div>
     <div class="card">
@@ -21,10 +26,21 @@
             Pracownicy
         </h3>
         <div class="card__body">
-            <p class="fontXXL">5</p>
+            <p class="fontXXL"><?=count($workers)?></p>
         </div>
         <div class="card__footer">
-            <a class="card__footer__btn" href="/uprawy">Przejdź</a>
+            <a class="btn btn__primary" href="/pracownicy">Przejdź</a>
+        </div>
+    </div>
+    <div class="card">
+        <h3 class="card__title">
+           Odmiany
+        </h3>
+        <div class="card__body">
+            <p class="fontXXL"><?=count($varieties)?></p>
+        </div>
+        <div class="card__footer">
+            <a class="btn btn__primary" href="/odmiany">Przejdź</a>
         </div>
     </div>
 </div>
