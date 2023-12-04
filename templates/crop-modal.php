@@ -8,7 +8,7 @@ switch ($method) {
     case "POST":
         $_POST = json_decode(file_get_contents('php://input'), true);
         $id = $_POST['id'] ?? 0;
-        $name = $_POST['name'] ?? "Dodaj uprawę";
+        $title = $_POST['title'] ?? "";
 
         $cropsStr = file_get_contents(dirname('index.php') . '/mockup-data/crops.json');
         $varietiesStr = file_get_contents(dirname('index.php') . '/mockup-data/varieties.json');
@@ -26,7 +26,7 @@ switch ($method) {
             <div class='modal__background'></div>
             <div class='modal'>
                 <div class='modal__header'>
-                    <h3 class='modal__title'>$name</h3>
+                    <h3 class='modal__title'>$title</h3>
                     <button class='btn btn__icon' title='Zamknij okno' onclick='closeModal()'>
                         <svg xmlns='http://www.w3.org/2000/svg' fill='var(--text-800)' viewBox='0 0 24 24' stroke-width='1.5' stroke='var(--text-800)' width='24' height='24'>
                             <path stroke-linecap='round' stroke-linejoin='round' d='M6 18L18 6M6 6l12 12' />
