@@ -29,6 +29,9 @@ switch($request[1]) {
                case "crop-modal":
                    require __DIR__ . '/templates/crop-modal.php';
                    break;
+               case "worker-modal":
+                   require __DIR__ . '/templates/worker-modal.php';
+                   break;
                default:
                    require __DIR__ . $pagesDir . '404.php';
                    break;

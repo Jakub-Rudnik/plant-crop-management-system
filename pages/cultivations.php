@@ -40,7 +40,6 @@ $crops = json_decode($cropsStr, true);
     }; ?>
 </div>
 
-<script src="../js/crops.service.js" type="module"></script>
 <?php
 require_once "./includes/footer.php"
 ?>
