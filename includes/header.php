@@ -18,9 +18,9 @@ switch ($request[1]) {
             break;
         }
         break;
-    case "/harmonogram":
+    case "/zadania":
         $CURRENT_PAGE = "SchedulePage";
-        $PAGE_TITLE = "Harmonogram";
+        $PAGE_TITLE = "Zadania";
         break;
     case "/pracownicy":
         $CURRENT_PAGE = "workers";
@@ -38,7 +38,7 @@ switch ($request[1]) {
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><?=$PAGE_TITLE ?></title>
+    <title><?=$PAGE_TITLE?></title>
     <link rel="stylesheet" href="../styles/main.css">
     <?php if ($CURRENT_PAGE == "Index") { ?>
         <meta name="description" content="" />

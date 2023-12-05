@@ -5,6 +5,7 @@
     $crops = json_decode(file_get_contents(dirname('index.php') . '/mockup-data/crops.json'), true);
     $workers = json_decode(file_get_contents(dirname('index.php') . '/mockup-data/workers.json'), true);
     $varieties = json_decode(file_get_contents(dirname('index.php') . '/mockup-data/varieties.json'), true);
+    $tasks = json_decode(file_get_contents(dirname('index.php') . '/mockup-data/tasks.json'), true);
 
 ?>
 <h1>Strona Główna</h1>
@@ -41,6 +42,17 @@
         </div>
         <div class="card__footer">
             <a class="btn btn__primary" href="/odmiany">Przejdź</a>
+        </div>
+    </div>
+    <div class="card">
+        <h3 class="card__title">
+           Zadania
+        </h3>
+        <div class="card__body">
+            <p class="fontXXL"><?=count($tasks)?></p>
+        </div>
+        <div class="card__footer">
+            <a class="btn btn__primary" href="/zadania">Przejdź</a>
         </div>
     </div>
 </div>

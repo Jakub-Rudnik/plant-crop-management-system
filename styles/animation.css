@@ -1,0 +1,21 @@
+.watering__on {
+    animation: watering 3.5s infinite;
+}
+
+@keyframes watering {
+    0% {
+        background-color: var(--primary-400);
+    }
+    35% {
+        background-color: var(--primary-400);
+    }
+    65% {
+        background-color: var(--primary-600);
+    }
+    85% {
+        background-color: var(--primary-400);
+    }
+    100% {
+        background-color: var(--primary-400);
+    }
+}

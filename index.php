@@ -46,6 +46,12 @@ switch($request[1]) {
             require __DIR__ . $pagesDir . '404.php';
         }
         break;
+    case 'login':
+        require __DIR__ . $pagesDir . 'login.php';
+        break;
+    case 'register':
+        require __DIR__ . $pagesDir . 'register.php';
+        break;
     default:
         require __DIR__ . $pagesDir . '404.php';
 }

@@ -33,10 +33,10 @@ switch ($method) {
         $cropHumidity = $crop['humidity'] ?? 0;
 
         $body = "
-                <form>
+                <form onsubmit='return validateCropForm()'> 
                 <div class='form-control'>
                     <label for='cropName' >Nazwa uprawy</label>
-                    <input id='cropName' type='text' value='" . $cropName. "'/>
+                    <input id='cropName' name='name' type='text' value='" . $cropName. "'/>
                 </div>
                 <div class='form-control'>
                     <label for='variant'>Odmiana</label>
@@ -46,11 +46,11 @@ switch ($method) {
                 </div>
                 <div class='form-control'>
                     <label for='quantity'>Wielkość uprawy</label>
-                    <input id='quantity' type='number' value='" . $cropQuantity . "'/>
+                    <input id='quantity' name='quantity' type='number' value='" . $cropQuantity . "'/>
                 </div>
                 <div class='form-control'>
                     <label for='humidity'>Wilgotność</label>
-                    <input id='humidity' type='number' value='" . $cropHumidity . "'/>
+                    <input id='humidity' name='humidity' type='number' value='" . $cropHumidity . "'/>
                 </div>
                 <button type='submit' class='btn btn__big btn__primary'>Dodaj</button>
                 </form>

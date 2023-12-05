@@ -23,11 +23,11 @@ switch ($method) {
                 <form>
                     <div class='form-control'>
                         <label for='workerForeName' >Imię</label>
-                        <input id='workerForeName' type='text' value='" . $workerForeName . "'/>
+                        <input id='workerForeName' name='firstname' type='text' value='" . $workerForeName . "'/>
                     </div>
                     <div class='form-control'>
                         <label for='workerLastName'>Nazwisko</label>
-                        <input id='workerLastName' type='text' value='" . $workerLastName . "'/>
+                        <input id='workerLastName' name='lastname' type='text' value='" . $workerLastName . "'/>
                     </div>
                     <button type='submit' class='btn btn__big btn__primary'>Dodaj</button>
                 </form>

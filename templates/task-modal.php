@@ -42,33 +42,33 @@ switch ($method) {
 
         $taskDesc = $task['description'] ?? '';
         $taskDate = $task['date'] ?? 0;
-        $taskDone = $task['done'] ?? 0;
+        $taskDone = ($task['done'] ?? 0) ? "checked" : "";
 
         $body = "
                 <form>
                 <div class='form-control'>
                     <label for='taskDesc' >Nazwa uprawy</label>
-                    <input id='taskDesc' type='text' value='" . $taskDesc . "'/>
+                    <input id='taskDesc' name='description' type='text' value='" . $taskDesc . "'/>
                 </div>
                 <div class='form-control'>
                     <label for='taskCrop'>Uprawa</label>
-                        <select id='taskCrop'>"
+                        <select id='taskCrop' name='crop'>"
                             . $cropsHtml .
                         "</select>
                 </div>
                 <div class='form-control'>
                     <label for='taskWorker'>Pracownik</label>
-                        <select id='taskWorker'>"
+                        <select id='taskWorker' name='worker'>"
                             . $workersHtml .
                         "</select>
                 </div>
                 <div class='form-control'>
                     <label for='taskDate' >Termin</label>
-                    <input id='taskDate' type='date' value='" . $taskDate . "'/>
+                    <input id='taskDate' name='date' type='date' value='" . $taskDate . "'/>
                 </div>
                 <div class='form-control'>
                     <label for='taskDone' >Ukończone</label>
-                    <input id='taskDone' type='checkbox' value='" . $taskDone . "'/>
+                    <input id='taskDone' name='done' type='checkbox' " . $taskDone . "/>
                 </div>
                 <button type='submit' class='btn btn__big btn__primary'>Dodaj</button>
                 </form>
