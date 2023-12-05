@@ -7,19 +7,42 @@ async function createModal(type, id) {
 
     switch (TYPE[0]) {
         case "crop":
-            titleSecondPart = "uprawę"
+            titleSecondPart = "uprawę";
             elemToFocus = "#cropName";
             break;
         case "worker":
             titleSecondPart = "pracownika"
             elemToFocus = "#workerForeName";
             break;
-
+        case "task":
+            titleSecondPart = "zadanie";
+            elemToFocus = "#taskDesc"
     }
 
-    const title = (TYPE[1] === "add" ? "Dodaj" : "Edytuj") + " " + titleSecondPart;
+    let mode;
+    switch (TYPE[1]) {
+        case "add":
+            mode = "Dodaj";
+            break;
+        case "edit":
+            mode = "Edytuj"
+            break;
+        case "delete":
+            elemToFocus = "#cancelBtn"
+            mode = "Usuń"
+            break;
+    }
 
-    template = await fetch(`http://localhost/templates/${TYPE[0]}-modal`, {
+    const title = mode + " " + titleSecondPart;
+
+    let url;
+    if (TYPE[1] !== "delete") {
+        url = `http://localhost/templates/${TYPE[0]}-modal`;
+    } else {
+        url = 'http://localhost/templates/delete-modal';
+    }
+
+    template = await fetch(url, {
         method: "POST",
         headers: {
             'Content-Type': 'application/json'
@@ -33,8 +56,6 @@ async function createModal(type, id) {
     })
         .then(res => res.text())
         .then(data => data);
-
-    console.log(template)
 
     const div = document.createElement('div');
     div.id = "modal";

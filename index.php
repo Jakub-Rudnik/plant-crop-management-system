@@ -17,8 +17,8 @@ switch($request[1]) {
         }
         require __DIR__ . $pagesDir . '404.php';
         break;
-    case 'harmonogram':
-        require __DIR__ . $pagesDir . 'schedule.php';
+    case 'zadania':
+        require __DIR__ . $pagesDir . 'tasks.php';
         break;
     case 'pracownicy':
         require __DIR__ . $pagesDir . 'workers.php';
@@ -31,6 +31,12 @@ switch($request[1]) {
                    break;
                case "worker-modal":
                    require __DIR__ . '/templates/worker-modal.php';
+                   break;
+               case "task-modal":
+                   require __DIR__ . '/templates/task-modal.php';
+                   break;
+               case "delete-modal":
+                   require __DIR__ . '/templates/delete-modal.php';
                    break;
                default:
                    require __DIR__ . $pagesDir . '404.php';
