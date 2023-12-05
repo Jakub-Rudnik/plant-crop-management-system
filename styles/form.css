@@ -26,6 +26,12 @@ label {
     padding-bottom: 5px;
 }
 
-input:focus, select:focus{
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+input:focus, select:focus {
     outline: 4px solid var(--primary-500);
 }

@@ -8,7 +8,6 @@
 @import "button.css";
 @import "table.css";
 @import "typography.css";
-@import "schedule.css";
 
 *, *::before, *::after{
     margin: 0;
