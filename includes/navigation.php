@@ -9,8 +9,8 @@ $navElements = [
         "name" => "Uprawy"
     ],
     (object)[
-        "path" => "/harmonogram",
-        "name" => "Harmonogram"
+        "path" => "/zadania",
+        "name" => "Zadania"
     ],
     (object)[
         "path" => "/pracownicy",
