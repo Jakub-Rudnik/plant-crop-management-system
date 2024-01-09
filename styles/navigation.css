@@ -30,6 +30,10 @@
     background-color: transparent;
 }
 
+.main__header__btn:hover {
+    cursor: pointer;
+}
+
 .main__header__logo {
     font-size: 20px;
     font-weight: bold;
