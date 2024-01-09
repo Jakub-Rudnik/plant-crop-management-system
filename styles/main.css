@@ -94,7 +94,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:not(.btn, .main__header__nav__link):hover {
     color: var(--primary-700);
     cursor: pointer;
 }
