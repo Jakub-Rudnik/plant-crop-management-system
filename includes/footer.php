@@ -8,6 +8,5 @@
 
 <script src="../js/navigation.js"></script>
 <script src="../js/modal.js"></script>
-<script src="../js/validation.js"></script>
 </body>
 </html>
