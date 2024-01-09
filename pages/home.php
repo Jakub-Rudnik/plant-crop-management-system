@@ -40,9 +40,6 @@
         <div class="card__body">
             <p class="fontXXL"><?=count($varieties)?></p>
         </div>
-        <div class="card__footer">
-            <a class="btn btn__primary" href="/odmiany">Przejdź</a>
-        </div>
     </div>
     <div class="card">
         <h3 class="card__title">
