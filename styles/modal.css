@@ -12,12 +12,6 @@
 }
 
 .modal {
-    z-index: 200;
-    position: fixed;
-    left: 50%;
-    right: 50%;
-    top: 50%;
-    bottom: 50%;
     width: max-content;
     height: fit-content;
     background-color: var(--background-50);

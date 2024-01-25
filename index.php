@@ -23,29 +23,6 @@ switch($request[1]) {
     case 'pracownicy':
         require __DIR__ . $pagesDir . 'workers.php';
         break;
-    case 'templates':
-        if (count($request) == 3) {
-           switch ($request[2]) {
-               case "crop-modal":
-                   require __DIR__ . '/templates/crop-modal.php';
-                   break;
-               case "worker-modal":
-                   require __DIR__ . '/templates/worker-modal.php';
-                   break;
-               case "task-modal":
-                   require __DIR__ . '/templates/task-modal.php';
-                   break;
-               case "delete-modal":
-                   require __DIR__ . '/templates/delete-modal.php';
-                   break;
-               default:
-                   require __DIR__ . $pagesDir . '404.php';
-                   break;
-           }
-        } else {
-            require __DIR__ . $pagesDir . '404.php';
-        }
-        break;
     case 'login':
         require __DIR__ . $pagesDir . 'login.php';
         break;
