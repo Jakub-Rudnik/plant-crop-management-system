@@ -1,7 +1,7 @@
 <?php
 function createModal($title, $body) {
     return "
-        <div class='modal__background' id='modal'>
+        <div class='modal__background' id='modals'>
             <div class='modal'>
                 <div class='modal__header'>
                     <h3 class='modal__title'>$title</h3>

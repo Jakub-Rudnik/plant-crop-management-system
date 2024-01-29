@@ -39,3 +39,10 @@ input:focus, select:focus {
 input:invalid {
     border: 2px solid var(--danger-500);
 }
+
+#errors {
+    background-color: var(--danger-500);
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+}

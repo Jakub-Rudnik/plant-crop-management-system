@@ -39,12 +39,12 @@ switch ($request[1]) {
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?=$PAGE_TITLE?></title>
-    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../../styles/main.css">
     <?php if ($CURRENT_PAGE == "Index") { ?>
         <meta name="description" content="" />
         <meta name="keywords" content="" />
     <?php } ?>
 </head>
 <body>
-    <?php require_once "navigation.php" ?>
+    <?php require_once "./components/navigation/navigation.php" ?>
     <main class="main__container">

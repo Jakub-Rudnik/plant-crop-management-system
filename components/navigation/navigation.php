@@ -19,6 +19,13 @@ $navElements = [
 ];
 
 $path = $_SERVER['REQUEST_URI'];
+
+include_once $_SERVER['DOCUMENT_ROOT'] . "/lib/functions.php";
+
+session_start();
+
+$userName = checkIfUserIsLoggedIn();
+
 ?>
 
 <aside class="main__header">
@@ -46,4 +53,11 @@ $path = $_SERVER['REQUEST_URI'];
             ?>
         </ul>
     </nav>
+    <div>
+        <div class="main__header__user">
+            <p>Zalogowano jako:</p>
+            <p style="margin-bottom: 10px"><?=$userName?></p>
+            <a class="btn btn__outlined" href="./api/logout.php" >Wyloguj się</a>
+        </div>
+    </div>
 </aside>

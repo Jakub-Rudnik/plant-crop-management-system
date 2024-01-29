@@ -14,16 +14,16 @@
            Logowanie
         </h4>
         <div class="card__body">
-            <form>
+            <form action="./api/login.php" method="POST">
                 <div class='form-control'>
                     <label for='email' >Email</label>
-                    <input id='email' type='email' required/>
+                    <input id='email' type='email' name="email" required/>
                 </div>
                 <div class='form-control'>
                     <label for='password'>Hasło</label>
-                    <input id='password' type='text' required/>
+                    <input id='password' type='password' name="password" required/>
                 </div>
-                <button type='submit' class='btn btn__big btn__primary'>Dodaj</button>
+                <button type='submit' class='btn btn__big btn__primary'>Zaloguj się</button>
             </form>
         </div>
         <div class="card__footer">
